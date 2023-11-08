@@ -1,18 +1,15 @@
 
 def main():
     mylist = [11, 100, 101, 999, 1001]
-    
-    mylist.reverse()
-
-    print(mylist)
+    reversedList = []
     
     
-  #  reverseList = mylist.reverse;
+    count = len(mylist)
+    while(count > 0):
+        reversedList.append(mylist[count-1])
+        count -= 1
+    print(reversedList)
     
-    #for x in mylist:
-    #    reverseList.add(mylist[len(mylist)-x])
-    #print(reverseList)
-
     
 if __name__ == '__main__':
     main()
